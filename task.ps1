@@ -27,7 +27,7 @@ $Subnet = New-AzVirtualNetworkSubnetConfig -Name $subnetName  -AddressPrefix $su
 New-AzVirtualNetwork -Name $virtualNetworkName -ResourceGroupName $resourceGroupName -Location $location -AddressPrefix $vnetAddressPrefix -Subnet $Subnet
 
 #create a public IP address
-New-AzPublicIpAddress -Name $publicIpAddressName -ResourceGroupName $resourceGroupName -AllocationMethod Static -DomainNameLabel "maksimens-task-9" -Location $location
+New-AzPublicIpAddress -Name $publicIpAddressName -ResourceGroupName $resourceGroupName -AllocationMethod Static -DomainNameLabel "maksimens-azure-task-9" -Location $location
 
 #create an SSH key resource
 New-AzSshKey -ResourceGroupName $resourceGroupName -Name $sshKeyName -PublicKey $sshKeyPublicKey
